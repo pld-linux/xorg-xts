@@ -2,7 +2,7 @@ Summary:	XTS - X Test Suite
 Summary(pl.UTF-8):	XTS - zestaw testów X
 Name:		xorg-xts
 Version:	0.99.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/test/xts-%{version}.tar.bz2
@@ -27,6 +27,8 @@ BuildRequires:	xorg-lib-libXtst-devel
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoprov	elf\\\\(buildid\\\\)
 
 %description
 This is a revamped version of X Test Suite (XTS) which removes some of
